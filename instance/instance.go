@@ -12,7 +12,7 @@ type instance struct {
 var (
 	once sync.Once
 	in *instance
-	MaxRoutine int
+	MaxRoutine = 500
 )
 
 func GetInstance() *instance {
